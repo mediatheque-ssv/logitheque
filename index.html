@@ -142,18 +142,18 @@ const TOOLS=[
   {id:'pixo',name:'Pixo',cote:'IMG',c:'#ffffff',fg:'#0c2a2e',h:320,grp:'img',url:G+'pixo/',role:"Le croqueur d'images : cinq petits outils",
    desc:"Pour préparer une image avant Canva, le site ou Instagram. Chaque outil a sa page :",
    tools:[['Redimensionner','taille et format en une fois','index.html'],['Détourer','retire le fond','detourer.html'],['Flouter','floute les visages','flouter.html'],['Canvify','allège images et vidéos pour Canva','canvify.html'],['DémaquIA','repère et retire les traces d’IA','demaquia.html']]},
-  {id:'videixo',name:'Vidéixo',cote:'VID',c:'#cfe43e',fg:'#0c2a2e',h:350,grp:'img',url:G+'videixo/',role:'Montage vidéo pour Instagram',
-   desc:"On dépose les vidéos ou les photos d'un évènement : Vidéixo garde le meilleur passage de chaque vidéo, ajoute le titre, le logo et un écran de fin, et fabrique une vidéo prête pour une story, un réel ou une publication.",
-   facts:['Ordi ou téléphone','Style aux couleurs de la médiathèque','Rien n’est envoyé en ligne']},
   {id:'pawdf',name:'PawDF',cote:'PDF',c:'#47b1b6',fg:'#0c2a2e',h:315,grp:'img',url:G+'pawdf/',role:'Retouche des PDF',
    desc:"Pour remettre des pages dans l'ordre, les faire pivoter, en supprimer ou en dupliquer, et fusionner plusieurs PDF en un seul.",
    facts:['Dans le navigateur','Rien n’est envoyé en ligne']},
+  {id:'videixo',name:'Vidéixo',cote:'VID',c:'#cfe43e',fg:'#0c2a2e',h:350,grp:'insta',url:G+'videixo/',role:'Montage vidéo pour Instagram',
+   desc:"On dépose les vidéos ou les photos d'un évènement : Vidéixo garde le meilleur passage de chaque vidéo, ajoute le titre, le logo et un écran de fin, et fabrique une vidéo prête pour une story, un réel ou une publication.",
+   facts:['Ordi ou téléphone','Style aux couleurs de la médiathèque','Rien n’est envoyé en ligne']},
+  {id:'battle-pic',name:'Battle Pic',cote:'PHO',c:'#0c2a2e',fg:'#cfe43e',h:300,grp:'insta',url:'#battle-pic',role:'Appli photo Android pour La Battle',
+   desc:"Le cadre de La Battle s'affiche directement dans le viseur. Chaque photo est enregistrée en deux versions, avec et sans cadre, au format post Instagram, prêtes à partager vers Canva.",
+   apk:true},
   {id:'mixo',name:'Mixo',cote:'POD',c:'#d1ebed',fg:'#0c2a2e',h:340,grp:'pod',url:'https://mixo-zeta.vercel.app/',role:'Studio de podcast en ligne',
    desc:"Pour enregistrer les voix, lancer des bruitages au bon moment, monter et mixer les prises, puis exporter l'épisode en MP3.",
    facts:['Dans le navigateur','Export MP3']},
-  {id:'battle-pic',name:'Battle Pic',cote:'PHO',c:'#0c2a2e',fg:'#cfe43e',h:300,grp:'pod',url:'#battle-pic',role:'Appli photo Android pour La Battle',
-   desc:"Le cadre de La Battle s'affiche directement dans le viseur. Chaque photo est enregistrée en deux versions, avec et sans cadre, au format post Instagram, prêtes à partager vers Canva.",
-   apk:true},
   {id:'suivixo',name:'Suivixo',cote:'COL',c:'#cfe43e',fg:'#0c2a2e',h:360,grp:'col',url:G+'Suivixo/',role:'Suivi des séries',
    desc:"Quels tomes sont où, ce qui manque, ce qu'il faut acheter. Il suffit d'y déposer l'export Orphée. Remplace l'ancien classeur Excel des mangas.",
    facts:['Mangas et BD ado-adulte : tout le réseau','BD et romans jeunesse : Servon']},
@@ -165,8 +165,9 @@ const TOOLS=[
    facts:['Mini et maxi par créneau réglables','Export Excel et PDF']}
 ];
 const GROUPS=[
-  {id:'img',t:'Images, vidéos et PDF',p:'Pour les stories, les posts, les visuels et les documents.'},
-  {id:'pod',t:'Podcast La Battle',p:"L'enregistrement et les photos de l'émission."},
+  {id:'img',t:'Images et PDF',p:'Pour préparer les images et les documents.'},
+  {id:'insta',t:'Instagram',p:'Pour les stories, les réels et les posts.'},
+  {id:'pod',t:'Podcast',p:"L'enregistrement et le montage des épisodes."},
   {id:'col',t:'Collections',p:'Le suivi des séries de la médiathèque.'},
   {id:'ben',t:'Bénévoles',p:'Les plannings des bénévoles et des mini-bénévoles.'}
 ];
